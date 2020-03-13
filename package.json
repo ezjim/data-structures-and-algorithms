@@ -1,0 +1,28 @@
+{
+  "name": "data-structures-and-algorithms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jest": "^25.1.0",
+    "node": "^13.10.1",
+    "run": "^1.4.0",
+    "start": "^5.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ezjim/data-structures-and-algorithms.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ezjim/data-structures-and-algorithms/issues"
+  },
+  "homepage": "https://github.com/ezjim/data-structures-and-algorithms#readme"
+}
