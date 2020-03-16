@@ -15,9 +15,8 @@ module.exports = { mapOne };
 ///////////////////////////////////////////////////////////////////////////
 ///!!!!!!!!!!! travis yml   and eslint from source code    
 
-/*  return an object .This object will contain the index and the value at that index. To do this, we’ll utilize the i argument: */
+//this is the original code i started with, i thought i had to just use .map,  then i found out that i had to make a function called 'map' without using the good stuff.  so Will and I sat down and with a little help figured out what we were missing to turn an [] into an [{}].
 // const arr = [1, 2, 3, 4];
-
 // let newArr = arr.map((val, i) => {
 //   return {
 //     value: val,
@@ -26,44 +25,27 @@ module.exports = { mapOne };
 // });
 // console.log(newArr);
 
-//////////////////////////////////////result
+                              /* expected result */
 // newArr = [
 //   { value: 1, index: 0 },
 //   { value: 2, index: 1 },
 //   { value: 3, index: 2 },
 //   { value: 4, index: 3 }
 // ];
-
-
-
-
-
 const map = (someArr, fn) => {
   let newArr = [];
 
-  for(let i = 0; i < someArr.length; i++) {
-    newArr[i] = fn(someArr[i], i); 
+  for (let i = 0; i < someArr.length; i++) {
+    newArr[i] = fn(someArr[i], i);
   }
   return newArr;
 };
 
-function makeObj(onions, carrots, id) {
+//this is just a recipie
+function makeObj(val, i) {
   return {
-    value: onions,
-    index: carrots,
-    id: Math.random()
+    onions: val,
+    carrots: i
   };
 }
-
-
-console.log(map([0, 1, 2, 2, 5], makeObj));
-
-
-
-/*  This will create an array of objects for us within our newArr: */
-
-
-
-
-
-// let arr = [1, 2, 3, 4];
+console.log(map([1, 2, 3, 4, 5], makeObj));
