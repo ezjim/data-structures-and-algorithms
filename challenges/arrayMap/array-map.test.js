@@ -5,3 +5,9 @@ describe('test', () => {
     console.log(mapOne);
   });
 });
+
+describe('it will map through', () => {
+  it('maps through an array', () => {
+    expect([{}]).toEqual([{}]);
+  });
+});
