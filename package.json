@@ -1,28 +1,33 @@
 {
-  "name": "data-structures-and-algorithms",
+  "name": "ctrackweek1",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
-    "express": "^4.17.1",
-    "jest": "^25.1.0",
-    "node": "^13.10.1",
-    "run": "^1.4.0",
-    "start": "^5.1.0"
-  },
-  "devDependencies": {},
   "scripts": {
-    "test": "jest"
+    "test": "jest --verbose --coverage",
+    "test:watch": "npm run test -- --watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ezjim/data-structures-and-algorithms.git"
+    "url": "git+https://github.com/ezjim/ctrackweek1.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ezjim/data-structures-and-algorithms/issues"
+    "url": "https://github.com/ezjim/ctrackweek1/issues"
   },
-  "homepage": "https://github.com/ezjim/data-structures-and-algorithms#readme"
+  "homepage": "https://github.com/ezjim/ctrackweek1#readme",
+  "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "eslint": "^6.8.0",
+    "jest": "^25.1.0"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
